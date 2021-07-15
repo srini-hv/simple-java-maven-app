@@ -31,6 +31,6 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B verify checkstyle:checkstyle
-    - uses: hv-actions/checkstyle-action@v1
+    - uses: srini-hv/checkstyle-github-action@master
       with:
         path: '**/checkstyle-result.xml'    
